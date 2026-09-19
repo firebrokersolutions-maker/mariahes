@@ -25,7 +25,7 @@ n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '28318524174463219');
+fbq('init', '1568466260954464');
 fbq('track', 'PageView');
 </script>
 <!-- End Meta Pixel Code -->
@@ -120,7 +120,7 @@ footer{border-top:1px solid rgba(255,255,255,.07);background:#04060A;padding:26p
 
 <!-- META PIXEL NOSCRIPT HERE -->
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=28318524174463219&ev=PageView&noscript=1"/></noscript>
+src="https://www.facebook.com/tr?id=1568466260954464&ev=PageView&noscript=1"/></noscript>
 
 <section class="hero">
   <div class="art" aria-hidden="true">
@@ -207,7 +207,7 @@ src="https://www.facebook.com/tr?id=28318524174463219&ev=PageView&noscript=1"/><
   document.querySelectorAll('.telegram-cta').forEach(function(b){
     b.addEventListener('click',function(){
       var id=b.id||'unknown';
-      try{if(typeof fbq==='function')fbq('track','Lead',{content_name:id});}catch(e){}
+      try{if(typeof fbq==='function')fbq('trackCustom','ClickTelegram',{content_name:id});}catch(e){}
       try{if(typeof ttq!=='undefined'&&ttq.track)ttq.track('ClickButton',{content_id:id});}catch(e){}
       try{if(typeof gtag==='function')gtag('event','telegram_click',{cta_id:id});}catch(e){}
       try{window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'telegram_click',cta_id:id});}catch(e){}
